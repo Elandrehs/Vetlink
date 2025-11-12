@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "Cliente John",
+      "password": "123",
+      "wallet": 35
+    }
+  ],
+  "purchases": [
+    {
+      "id": 1,
+      "userId": 1,
+      "totalSpent": 165,
+      "date": "2025-11-10T23:22:24.928Z"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "id": 4,
+          "name": "Pastilla desparasitadora",
+          "unitPrice": 5,
+          "quantity": 4
+        }
+      ],
+      "userId": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Shampoo",
+      "description": "El mejor shampoo para perros",
+      "price": 20,
+      "category": "hygiene"
+    },
+    {
+      "id": 2,
+      "name": "Comida para Gato",
+      "description": "La mejor comida para gato",
+      "price": 35,
+      "category": "food"
+    },
+    {
+      "id": 3,
+      "name": "Vestido para perro",
+      "description": "El vestido mas lindo para tu mascota",
+      "price": 50,
+      "category": "clothes"
+    },
+    {
+      "id": 4,
+      "name": "Pastilla desparasitadora",
+      "description": "Recomendada por los mejores veterinarios",
+      "price": 5,
+      "category": "medicine"
+    },
+    {
+      "id": 5,
+      "name": "Hueso de juguete",
+      "description": "Deja que tu mascota se divierta con este juguete",
+      "price": 25,
+      "category": "toys"
+    },
+    {
+      "id": 6,
+      "name": "Moño",
+      "description": "El accesorio perfecto para tu mascota",
+      "price": 9,
+      "category": "accessories"
+    },
+    {
+      "id": 7,
+      "name": "Comida para perro",
+      "description": "La mejor comida para perro",
+      "price": 33,
+      "category": "food"
+    },
+    {
+      "id": 8,
+      "name": "Vestido para gato",
+      "description": "El vestido mas lindo para tu gato",
+      "price": 40,
+      "category": "clothes"
+    }
+  ]
+}

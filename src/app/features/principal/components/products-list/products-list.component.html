@@ -1,0 +1,57 @@
+<!--EN ESTA PARTE se activa el modal DEL PRODUCT-->
+<app-add-product-button (click)="showModal = true"> {{'add-product' | translate}}</app-add-product-button>
+
+<!-- Capa del modal -->
+<div class="modal-overlay" *ngIf="showModal">
+  <div class="modal-content">
+    <app-product-form-modal
+      *ngIf="showModal"
+      [product]="productData"
+      [editMode]="editMode"
+      (closeModal)="showModal = false"
+      (cancelRequested)="onCancelRequested()"
+      (productAddRequested)="onProductAddRequested($event)"
+      (productUpdatedRequested)="onProductUpdateRequested($event)"
+    />
+  </div>
+</div>
+
+<!--*ngFor="let product of products"-->
+<div class="product-list-container">
+  <div (click)="onEditItem(product)"  class="card" *ngFor="let product of products">
+
+    <div class="card__glow"></div>
+    <div class="card__content">
+
+      <div class="card__badge">NEW</div>
+
+      <div class="card__image">
+        <img class="category-icon" [src]="getCategoryIcon(product.category)" [alt]="product.category" />
+      </div>
+      <div class="card__text">
+        <!--EN ESTA PARTE VA LA NOMBRE-->
+        <p class="card__title">{{ product.name }}</p>
+        <!--EN ESTA PARTE VA LA DESCRIP-->
+        <p class="card__description">{{ product.description }}</p>
+
+      </div>
+      <div class="card__footer">
+        <!--EN ESTA PARTE VA EL PRECIO-->
+        <div class="card__price">S/. {{ product.price }}</div>
+
+
+        <!--EN ESTA ADD TO CART POST-->
+        <div class="card__button" (click)="addToCart(product) ; $event.stopPropagation()">
+          <span class="sign">+</span>
+        </div>
+
+        <!--EN ESTA PARTE DELETE-->
+        <div class="card__button" (click)="onDeleteItem(product); $event.stopPropagation()">
+          <span class="sign">-</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

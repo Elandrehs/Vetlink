@@ -1,0 +1,27 @@
+{
+  "welcome": "Welcome to VetLink",
+  "choose": "Choose an option and fill the fields to access",
+  "login": "Log In",
+  "register": "Register",
+  "access": "Access",
+  "name": "Name",
+  "user": "User",
+  "password": "Password",
+
+  "logged": "Welcome",
+
+  "add-product": "Add Product",
+  "edit-product": "Edit Product",
+  "add-money": "Add Money",
+  "buy-now": "Buy Now",
+
+  "your-cart": "Your cart",
+  "wallet-balance": "Wallet balance",
+  "purchase-history": "Purchase history",
+  "total": "Total",
+
+  "complete": "Complete the information below",
+  "product-name": "Product Name",
+  "product-description": "Product Description",
+  "product-price": "Product Price"
+}

@@ -1,0 +1,114 @@
+.form {
+  padding: 20px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--shadow-color);
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-button {
+  align-self: flex-end;
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  background-color: var(--container-color);
+  color: var(--shadow-color);
+  border-radius: 5px;
+  border: 2px solid var(--shadow-color);
+}
+
+.cancel-button:hover {
+  background-color: var(--primary-color);
+}
+
+.title{
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom:  10px;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+.input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--shadow-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--container-color);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.categories-option {
+  align-self: center;
+  display: flex;
+  width: 165px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button-selection {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--shadow-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--shadow-color);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.add-product {
+  align-self: center;
+}
+
+.button-selection input[type="radio"]:checked {
+  pointer-events: none;
+}
+
+.button-selection input[type="radio"]:checked ~ img,
+.button-selection input[type="radio"]:checked + img {
+  background-color: var(--primary-color);
+}
+
+.button-selection:has(input[type="radio"]:checked) {
+  box-shadow: 0 0 var(--shadow-color);
+  transform: translate(3px, 3px);
+  background-color: var(--primary-color);
+}
+

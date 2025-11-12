@@ -1,0 +1,38 @@
+<form  #productForm="ngForm" class="form" (submit)="onSubmit()">
+  <div class="form-header">
+    <button type="button" (click)="onCancel()" class="cancel-button">X</button>
+
+    <h2 class="title">{{ editMode ? ('edit-product' | translate) : ('add-product' | translate) }}</h2>
+    <h3 class="subtitle">{{'complete'|translate}}</h3>
+  </div>
+  <input [(ngModel)]="product.name"  class="input" name="name" [placeholder]="'product-name' | translate" type="text" required>
+  <input [(ngModel)]="product.description" class="input" name="description" [placeholder]="'product-description' | translate" type="text" required>
+  <input [(ngModel)]="product.price" class="input" name="price" [placeholder]="'product-price' | translate" type="number" required>
+  <div class="categories-option">
+    <label class="button-selection">
+      <input type="radio" name="category" value="food" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/food-icon.png" alt="">
+    </label>
+    <label class="button-selection">
+      <input type="radio" name="category" value="clothes" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/clothes-icon.png" alt="">
+    </label>
+    <label class="button-selection">
+      <input type="radio" name="category" value="medicine" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/medicine-icon.png" alt="">
+    </label>
+    <label class="button-selection">
+      <input type="radio" name="category" value="toys" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/toys-icon.png" alt="">
+    </label>
+    <label class="button-selection">
+      <input type="radio" name="category" value="hygiene" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/hygiene-icon.png" alt="">
+    </label>
+    <label class="button-selection">
+      <input type="radio" name="category" value="accessories" [(ngModel)]="product.category" hidden>
+      <img class="icon" src="/img/accessories-icon.png" alt="">
+    </label>
+  </div>
+  <app-add-product-button  class="add-product">{{ editMode ? ('edit-product' | translate) : ('add-product' | translate) }}</app-add-product-button>
+</form>

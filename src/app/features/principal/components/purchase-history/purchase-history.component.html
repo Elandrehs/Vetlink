@@ -1,0 +1,28 @@
+<div class="history-wrapper">
+  <div class="history">
+    <label class="history-title">{{ 'purchase-history'|translate }}</label>
+
+    <div class="purchases">
+
+      <div class="purchase" *ngFor="let purchase of purchases">
+        <div class="icon-container">
+          <img class="shopping-cart-iconB" src="/img/shopping-cart-iconB.png" alt="">
+        </div>
+        <div class="purchase-date">
+          <!-- ACA VA LA DATE DE LA COMPRA-->
+          <span>{{ formatDate(purchase.date) }}</span>
+        </div>
+        <div class="purchase-hour">
+          <!-- ACA VA LA HORA DE LA COMPRA-->
+          <span>{{ formatTime(purchase.date) }}</span>
+        </div>
+        <!-- ACA VA EL PRECIO TOTAL DE LA COMPRA-->
+        <div class="purchase-cost">S/.{{ purchase.totalSpent.toFixed(2) }}</div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+

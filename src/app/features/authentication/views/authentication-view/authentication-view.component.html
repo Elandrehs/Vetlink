@@ -1,0 +1,11 @@
+<div class="auth-container">
+  <app-language-switcher class="language-switcher"/>
+  <h2>{{ 'welcome'|translate }}</h2>
+  <p>{{'choose'|translate}}</p>
+  <div class="buttons">
+    <app-add-product-button [routerLink]="'/authentication/login'">{{ 'login'|translate }}</app-add-product-button>
+    <app-add-product-button [routerLink]="'/authentication/register'">{{ 'register'|translate }}</app-add-product-button>
+  </div>
+  </div>
+<br>
+<router-outlet/>

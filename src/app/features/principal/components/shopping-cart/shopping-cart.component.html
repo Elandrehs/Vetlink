@@ -1,0 +1,32 @@
+<div class="cart-wrapper">
+  <div class="cart">
+    <label class="cart-title">{{ 'your-cart' | translate }}</label>
+    <div class="products">
+      <div class="product" *ngFor="let item of cart.items">
+        <div class="icon-container">
+          <img class="category-icon" src="/img/food-icon.png" alt="">
+        </div>
+        <div class="product-name">
+          <span>{{ item.name }}</span>
+        </div>
+        <div class="quantity">
+          <button (click)="decreaseQuantity(item)">
+            <span class="sign">-</span>
+          </button>
+          <label>{{ item.quantity }}</label>
+          <button (click)="increaseQuantity(item)">
+            <span class="sign plus">+</span>
+          </button>
+        </div>
+        <div class="product-price">S/.{{ item.unitPrice * item.quantity }}</div>
+      </div>
+    </div>
+    <div class="total">
+      <label class="cart-title">{{ 'total'|translate }}</label>
+      <div class="total-footer">
+        <label class="total-cost">S/.{{ totalCost }}</label>
+        <app-purchase-button (click)="buyNow()"/>
+      </div>
+    </div>
+  </div>
+</div>

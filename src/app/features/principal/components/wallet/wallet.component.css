@@ -1,0 +1,47 @@
+.wallet-balance-card {
+  width: fit-content;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0 12px;
+}
+.wallet-wrapper {
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallet-wrapper img {
+  width: 100%;
+}
+.balance-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 120px;
+  gap: 0;
+}
+.balance-heading {
+  font-size: 11px;
+  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+.balance {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.balance{
+  color: var(--primary-color);
+  transition: color 0.5s;
+}
+
+.animate {
+  color: var(--secondary-color);
+}
+

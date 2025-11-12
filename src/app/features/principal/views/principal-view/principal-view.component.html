@@ -1,0 +1,19 @@
+<main class="grid-container">
+  <div class="grid-item item-1">
+    <img class="vetlink-logo" src="/img/vetlink-logo.png">
+    <h3 class="welcome">
+      <button class="logout-button" (click)="logout()"><img class="logout-icon" src="/img/logout-icon.png" alt=""></button>
+      ¡{{'logged'|translate}}, {{ loggedUserName }}!
+    </h3>
+    <h1 class="vetlink-name">VetLink</h1>
+    <app-language-switcher/>
+  </div>
+  <app-products-list class="grid-item item-3"/>
+  <div class="right-column">
+    <app-wallet class="grid-item item-2"/>
+    <div class="item-4-5">
+      <app-shopping-cart class="grid-item item-4"/>
+      <app-purchase-history class="grid-item item-5"/>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,33 @@
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login{
+  width: 30%;
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spinner{
+  margin: 0 auto;
+}
+.title{
+  width: 200px;
+  text-align: center;
+}
+
+.button{
+  background-color: var(--primary-color) !important;
+  color:var(--font-color) !important;
+}
+
+.button:disabled{
+  background-color: var(--font-color)!important;
+  color:var(--secondary-color) !important;
+}
+
+

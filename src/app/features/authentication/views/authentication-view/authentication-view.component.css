@@ -1,0 +1,16 @@
+.auth-container{
+  margin-top:50px ;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px
+}
+.language-switcher{
+  position:absolute;
+  right:10px;
+  top:10px;
+}
+.buttons{
+  display:flex;
+  gap:40px;
+}

@@ -1,0 +1,18 @@
+.toggle{
+  border: 2px solid var(--shadow-color);
+  border-radius: 10px;
+  background-color: var(--container-color);
+  color: var(--secondary-color) !important;
+}
+.toggle-option{
+  border: 2px solid var(--shadow-color);
+  color: var(--secondary-color) !important;
+}
+
+.toggle-option.mat-button-toggle-checked {
+  background-color: var(--background-color);
+}
+
+.toggle-option {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,10 @@
+<div class="wallet-balance-card">
+  <div class="wallet-wrapper">
+    <img src="/img/wallet-icon.png" alt="wallet-icon">
+  </div>
+  <div class="balance-wrapper">
+    <span class="balance-heading">{{ 'wallet-balance' | translate }}</span>
+    <p [class.animate]="balanceAnimated" class="balance"><span id="currency">S/.</span>{{ loggedUserWallet }}</p>
+  </div>
+  <app-classic-button class="add-money-button" (click)="addMoney()">{{ 'add-money'|translate }}</app-classic-button>
+</div>

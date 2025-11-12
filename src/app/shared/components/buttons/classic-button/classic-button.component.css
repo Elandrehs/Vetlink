@@ -1,0 +1,23 @@
+.classic-button {
+  padding: 1px 15px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color:var(--font-color);
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.classic-button:hover {
+  background-color: var(--secondary-color);
+}
+.plus-sign {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

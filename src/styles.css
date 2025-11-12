@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/styles/variables.css';
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aquí podrías agregar estilos globales, por ejemplo: */
+body {
+  font-family: "Segoe UI","Roboto", sans-serif;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  scrollbar-color: var(--primary-color) var(--background-color);
+  overflow: hidden;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Fondo con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* encima si o si */
+}
+
+.modal-content {
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

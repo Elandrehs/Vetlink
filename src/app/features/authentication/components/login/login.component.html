@@ -1,0 +1,18 @@
+<div class="body">
+  <div class="login">
+    <mat-spinner class="spinner" *ngIf="loading" diameter="50"></mat-spinner>
+    <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="access()">
+    <img src="/img/vetlink-logo.png" width="150px" height="150px">
+    <h1 class="title">{{'login'|translate}}</h1>
+    <mat-form-field class="ancho">
+      <mat-label>{{ 'user'|translate }}</mat-label>
+      <input type="text" matInput formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="ancho ">
+      <mat-label >{{ 'password'|translate }}</mat-label>
+      <input type="password" matInput formControlName="password">
+    </mat-form-field>
+    <button type="submit" mat-flat-button class="ancho button" [disabled]="form.invalid">{{'access'|translate}}</button>
+    </form>
+  </div>
+</div>

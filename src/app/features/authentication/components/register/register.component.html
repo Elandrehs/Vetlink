@@ -1,0 +1,22 @@
+<div class="body">
+  <div class="register">
+    <mat-spinner class="spinner" *ngIf="loading" diameter="50"></mat-spinner>
+    <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="register()">
+      <img src="/img/vetlink-logo.png" width="150px" height="150px">
+      <h1 class="title">{{'register'|translate}}</h1>
+      <mat-form-field class="ancho">
+        <mat-label>{{ 'name'|translate }}</mat-label>
+        <input type="text" matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field class="ancho">
+        <mat-label>{{ 'user'|translate }}</mat-label>
+        <input type="text" matInput formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="ancho">
+        <mat-label>{{ 'password'|translate }}</mat-label>
+        <input type="password" matInput formControlName="password">
+      </mat-form-field>
+      <button type="submit" mat-flat-button class="ancho button" [disabled]="form.invalid">{{'register'|translate}}</button>
+    </form>
+  </div>
+</div>

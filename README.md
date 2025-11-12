@@ -1,59 +1,105 @@
-# Vetlink
+# 🐾 Vetlink — E-commerce Veterinario Académico
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+**Vetlink** es un proyecto académico desarrollado como práctica para afianzar conocimientos en **Angular**, **arquitectura front-end**, y el uso de **APIs simuladas con JSON Server**.  
+La aplicación representa un **e-commerce de productos veterinarios**, donde los usuarios pueden registrarse, iniciar sesión, gestionar productos, realizar compras simuladas y consultar su historial de ventas.
 
-## Development server
+---
 
-To start a local development server, run:
+![Vetlink Home](public/assets/readme/vetlink_principal.png)
+
+![Vetlink Product](public/assets/readme/vetlink_modal.png)
+
+![Vetlink Cart](public/assets/readme/vetlink_cart.png)
+
+![Vetlink Cart](public/assets/readme/vetlink_login.png)
+
+---
+
+## ⚙️ Funcionalidades principales
+
+- 🔐 Registro e inicio de sesión de usuarios  
+- 🛒 Carrito de compras interactivo  
+- 💰 Sistema de billetera virtual (simulada)  
+- 🧾 Historial de ventas personal por cuenta  
+- 🐕 Publicación, edición y eliminación de productos  
+- 🧩 Clasificación de productos (comida, ropa, medicina, juguete, aseo, accesorio)  
+- 🌍 Internacionalización **(Español / Inglés)**  
+- 🧠 Conexión con **Fake API (JSON Server)** para simular operaciones CRUD
+
+---
+
+## 🧠 Rol y aprendizaje
+
+**Rol:**  
+- Desarrollo **frontend completo** con Angular  
+- Diseño y estructura de componentes  
+- Implementación de comunicación con **Fake API**  
+- Práctica de **relaciones tipo cliente-servidor** y manejo de datos simulados  
+- Diseño de interfaz y experiencia de usuario (UI/UX)  
+
+**Aprendizajes clave:**  
+- Comprensión de arquitectura de una app e-commerce  
+- Manejo de estados y flujos de datos  
+- Uso de internacionalización (i18n)  
+- Diseño modular y escalable en Angular  
+- Buenas prácticas con JSON Server para simular un backend  
+
+---
+
+## 🧩 Tecnologías utilizadas
+
+- **Angular 18+**
+- **TypeScript**
+- **HTML5 / CSS3**
+- **JSON Server** *(Fake API para pruebas locales)*
+- **Git / GitHub**
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+Asegúrate de tener instalado **Node.js** y **Angular CLI**.
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Moverse al directorio del proyecto
+cd vetlink
+
+# Ejecutar la aplicación en modo desarrollo
 ng serve
 ```
+Luego abre 👉 http://localhost:4200 en tu navegador.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ⚙️ Ejecutar la Fake API (JSON Server)
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abre otra terminal (sin cerrar la anterior) y ejecuta:
 
 ```bash
-ng generate --help
+
+# Moverse al directorio del proyecto
+cd vetlink
+
+json-server --watch server/db.json
+
 ```
+Esto inicializa la Fake API, necesaria para las operaciones de productos, carrito e historial.
 
-## Building
+## 🧩 Flujo básico de uso
 
-To build the project run:
+1. Crea una cuenta mediante **"Registrarse"**.  
+2. Inicia sesión y accede a la tienda.  
+3. Agrega o edita productos (nombre, descripción, precio, tipo).  
+4. Añade productos al carrito con el botón **"+"** o elimínalos con **"-"**.  
+5. Presiona **"Agregar dinero"** para simular fondos.  
+6. Realiza una compra y visualízala en tu historial personal.  
 
-```bash
-ng build
-```
+> 💡 La aplicación no descarga imágenes reales; el tipo de producto se representa mediante íconos.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 👨‍💻 Autor
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Victor Cruz**  
+Estudiante de Ingeniería de Software  
